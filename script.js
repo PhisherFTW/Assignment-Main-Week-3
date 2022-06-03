@@ -9,13 +9,13 @@ let computerChoice = computerPlay(computerSelection);
 let playerSelection = prompt("Rock,Scissors,Paper?");
 playerSelection =playerSelection.toLocaleLowerCase();
 
-var results = null;
+// var results = null;
 
-    // function game1(playerSelection,computerSelection, results) {
-    // if (computerPlay(computerSelection) === playerSelection) {
+    // function game1(playerSelection,computerChoice, results) {
+    // if computerChoice === playerSelection) {
     //     results = "It was a tie!";
     // }
-    // if (playerSelection == "rock" && computerPlay(computerSelection) == "paper") {
+    // if (playerSelection == "rock" && computerChoice == "paper") {
     //     results = "You lost!, Paper beats Rock!";
     // }
     // if (playerSelection == "paper" && computerPlay(computerSelection) == "scissors") {
@@ -35,7 +35,7 @@ var results = null;
     // }
     // console.log(results);
 // }
-// game1(playerSelection, computerSelection);}}}
+// game1(playerSelection, computerSelection);
 const getResults = (playerSelection, computerChoice) => {
     switch (playerSelection + computerChoice) {
       case 'scissorspaper':
