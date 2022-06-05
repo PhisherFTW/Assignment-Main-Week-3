@@ -64,9 +64,9 @@ function doSomething() {
         console.log("Round " + round + "\ncomputer's choice = " + computerChoice + "\nYour choice = " + playerSelection + "\nPlayer's Score:" + playerScore + "\nComputers Score:" +computerScore);
         console.log("\n---------------------------------------")
     }
-    if (playerScore == 3) {
+    if (playerScore >= 3) {
         console.log("You won the game!")
-    } else if (computerScore === 3) {
+    } else if (computerScore >= 3) {
         console.log("You lost the game!")
     } else if ( playerScore > computerScore){
         console.log("Technically you won.")
