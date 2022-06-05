@@ -27,11 +27,9 @@ function doSomething() {
         playerSelection = playerSelection.toLocaleLowerCase();
         if( playerSelection !== "rock" && playerSelection !== "paper" && playerSelection !== "scissors" ){
             i = i - 1
-            alert("Wrong Input! Choose between Rock Paper & Scissor"); continue
+            alert("Wrong Input! Choose between Rock Paper & Scissor"); 
+            continue;
         }
-
-        
-        
         if (playerSelection === computerChoice) {
             console.log("It was a tie!");
             ties = ties+1;
@@ -60,8 +58,6 @@ function doSomething() {
             console.log("You won!, Rock beats Scissors!");
             playerScore = playerScore+1;
         }
-
-        
         console.log("Round " + round + "\ncomputer's choice = " + computerChoice + "\nYour choice = " + playerSelection + "\nPlayer's Score:" + playerScore + "\nComputers Score:" +computerScore);
         console.log("\n---------------------------------------")
     }
