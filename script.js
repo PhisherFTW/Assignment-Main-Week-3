@@ -24,12 +24,13 @@ function doSomething() {
             console.log("Why did you exit the game?");
             return;
         }
+        playerSelection = playerSelection.toLocaleLowerCase();
         if( playerSelection !== "rock" && playerSelection !== "paper" && playerSelection !== "scissors" ){
             i = i - 1
-            alert("Wrong Input! Choose between Rock Paper & Scissor");
+            alert("Wrong Input! Choose between Rock Paper & Scissor"); continue
         }
 
-        playerSelection = playerSelection.toLocaleLowerCase();
+        
         
         if (playerSelection === computerChoice) {
             console.log("It was a tie!");
