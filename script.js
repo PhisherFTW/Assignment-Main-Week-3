@@ -68,8 +68,13 @@ function doSomething() {
         console.log("You won the game!")
     } else if (computerScore === 3) {
         console.log("You lost the game!")
+    } else if ( playerScore > computerScore){
+        console.log("Technically you won.")
+    } else if (computerScore > playerScore) { 
+        console.log("Technically the computer won.")
     } else {
-        console.log("It was a tie")
+        console.log("Its a tie!")
     }
+
 }
 doSomething();
